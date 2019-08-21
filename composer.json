@@ -1,0 +1,42 @@
+{
+    "name": "beapp/repository-tester-bundle",
+    "description": "Symfony testing bundle for Doctrine repositories",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["symfony", "doctrine", "repository", "test"],
+    "authors": [
+        {
+            "name": "Tanguy Reviller",
+            "email": "t.reviller@beapp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "doctrine/orm": "^2.6",
+        "phpunit/phpunit": "^8.2",
+        "symfony/console": "^3.4 || ^4.0",
+        "symfony/symfony": "^3.4 || ^4.0",
+        "symfony/monolog-bundle": "^3.4 || ^4.0",
+        "beapp/repository-tester-core": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\RepositoryTesterBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beapp\\RepositoryTesterBundle\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4-dev"
+        }
+    }
+}
